@@ -55,7 +55,7 @@ public class UserCRUDTest extends TestBase {
                 .header("Connection","keep-alive")
                 .when()
                 .body(userPojo)
-                .put("/users/1535");
+                .put("/users/2338478");
         response.prettyPrint();
         response.then().statusCode(200);
 
@@ -67,7 +67,7 @@ public class UserCRUDTest extends TestBase {
                 .header("Authorization", "Bearer c8fa4af5449aff5c104930482cc994318f2ae1a097c32bb596799dae3b2f6f3b")
                 .header("Connection", "keep-alive")
                 .when()
-                .delete("/users/1535");
+                .delete("/users/2338478");
         response.prettyPrint();
         response.then().statusCode(204);
 
